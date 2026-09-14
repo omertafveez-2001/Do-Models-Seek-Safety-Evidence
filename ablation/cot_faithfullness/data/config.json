@@ -1,0 +1,262 @@
+{
+  "experiment_name": "decision_rationale_faithfulness",
+  "models": [
+    "gpt-5.5",
+    "o3",
+    "sonnet",
+    "opus"
+  ],
+  "random_seed": 42,
+  "bucket_targets_per_model": {
+    "cost_rationale_skip": 45,
+    "risk_rationale_skip": 45,
+    "obligation_sensitive": 25,
+    "salience_sensitive": 25,
+    "post_rationalization": 45
+  },
+  "bucket_variant_caps": {
+    "cost_rationale_skip": 15,
+    "risk_rationale_skip": 15,
+    "post_rationalization": 15
+  },
+  "actual_counts": {
+    "gpt-5.5": {
+      "cost_rationale_skip": 45,
+      "risk_rationale_skip": 45,
+      "obligation_sensitive": 25,
+      "salience_sensitive": 25,
+      "post_rationalization": 45
+    },
+    "o3": {
+      "cost_rationale_skip": 45,
+      "risk_rationale_skip": 45,
+      "obligation_sensitive": 25,
+      "salience_sensitive": 25,
+      "post_rationalization": 45
+    },
+    "sonnet": {
+      "cost_rationale_skip": 45,
+      "risk_rationale_skip": 45,
+      "obligation_sensitive": 25,
+      "salience_sensitive": 25,
+      "post_rationalization": 45
+    },
+    "opus": {
+      "cost_rationale_skip": 45,
+      "risk_rationale_skip": 33,
+      "obligation_sensitive": 0,
+      "salience_sensitive": 25,
+      "post_rationalization": 45
+    }
+  },
+  "shortfalls": {
+    "gpt-5.5": {
+      "cost_rationale_skip": 0,
+      "risk_rationale_skip": 0,
+      "obligation_sensitive": 0,
+      "salience_sensitive": 0,
+      "post_rationalization": 0
+    },
+    "o3": {
+      "cost_rationale_skip": 0,
+      "risk_rationale_skip": 0,
+      "obligation_sensitive": 0,
+      "salience_sensitive": 0,
+      "post_rationalization": 0
+    },
+    "sonnet": {
+      "cost_rationale_skip": 0,
+      "risk_rationale_skip": 0,
+      "obligation_sensitive": 0,
+      "salience_sensitive": 0,
+      "post_rationalization": 0
+    },
+    "opus": {
+      "cost_rationale_skip": 0,
+      "risk_rationale_skip": 12,
+      "obligation_sensitive": 25,
+      "salience_sensitive": 0,
+      "post_rationalization": 0
+    }
+  },
+  "eligible_source_variant_counts": {
+    "gpt-5.5": {
+      "cost_rationale_skip": {
+        "offered_report": 461,
+        "report_discovery": 377,
+        "evidence_discovery": 489
+      },
+      "risk_rationale_skip": {
+        "offered_report": 426,
+        "report_discovery": 325,
+        "evidence_discovery": 413
+      },
+      "obligation_sensitive": {
+        "cost_obligation_decomposition": 43
+      },
+      "salience_sensitive": {
+        "matched_salience_comparison": 258
+      },
+      "post_rationalization": {
+        "offered_report": 364,
+        "report_discovery": 439,
+        "evidence_discovery": 343
+      }
+    },
+    "o3": {
+      "cost_rationale_skip": {
+        "offered_report": 744,
+        "report_discovery": 731,
+        "evidence_discovery": 821
+      },
+      "risk_rationale_skip": {
+        "offered_report": 658,
+        "report_discovery": 645,
+        "evidence_discovery": 693
+      },
+      "obligation_sensitive": {
+        "cost_obligation_decomposition": 97
+      },
+      "salience_sensitive": {
+        "matched_salience_comparison": 265
+      },
+      "post_rationalization": {
+        "offered_report": 203,
+        "report_discovery": 218,
+        "evidence_discovery": 183
+      }
+    },
+    "sonnet": {
+      "cost_rationale_skip": {
+        "offered_report": 413,
+        "report_discovery": 374,
+        "evidence_discovery": 552
+      },
+      "risk_rationale_skip": {
+        "offered_report": 310,
+        "report_discovery": 300,
+        "evidence_discovery": 380
+      },
+      "obligation_sensitive": {
+        "cost_obligation_decomposition": 69
+      },
+      "salience_sensitive": {
+        "matched_salience_comparison": 264
+      },
+      "post_rationalization": {
+        "offered_report": 209,
+        "report_discovery": 233,
+        "evidence_discovery": 124
+      }
+    },
+    "opus": {
+      "cost_rationale_skip": {
+        "offered_report": 56,
+        "evidence_discovery": 27
+      },
+      "risk_rationale_skip": {
+        "offered_report": 18,
+        "evidence_discovery": 15
+      },
+      "obligation_sensitive": {},
+      "salience_sensitive": {
+        "matched_salience_comparison": 27
+      },
+      "post_rationalization": {
+        "offered_report": 519,
+        "report_discovery": 429,
+        "evidence_discovery": 561
+      }
+    }
+  },
+  "selected_source_variant_counts": {
+    "gpt-5.5": {
+      "cost_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      },
+      "risk_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      },
+      "obligation_sensitive": {
+        "cost_obligation_decomposition": 25
+      },
+      "salience_sensitive": {
+        "matched_salience_comparison": 25
+      },
+      "post_rationalization": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      }
+    },
+    "o3": {
+      "cost_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      },
+      "risk_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      },
+      "obligation_sensitive": {
+        "cost_obligation_decomposition": 25
+      },
+      "salience_sensitive": {
+        "matched_salience_comparison": 25
+      },
+      "post_rationalization": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      }
+    },
+    "sonnet": {
+      "cost_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      },
+      "risk_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      },
+      "obligation_sensitive": {
+        "cost_obligation_decomposition": 25
+      },
+      "salience_sensitive": {
+        "matched_salience_comparison": 25
+      },
+      "post_rationalization": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      }
+    },
+    "opus": {
+      "cost_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 30
+      },
+      "risk_rationale_skip": {
+        "evidence_discovery": 15,
+        "offered_report": 18
+      },
+      "obligation_sensitive": {},
+      "salience_sensitive": {
+        "matched_salience_comparison": 25
+      },
+      "post_rationalization": {
+        "evidence_discovery": 15,
+        "offered_report": 15,
+        "report_discovery": 15
+      }
+    }
+  }
+}
