@@ -793,6 +793,12 @@ def plot_flip_rate_by_edit_type(
         cell = edit_counts.get((str(model), "severity_raised"))
         if cell is not None:
             print(model, cell["k"], cell["n"], cell["rate"], cell["ci_low"], cell["ci_high"], sep=", ")
+    print("intervention, model, numerator, denominator, rate")
+    for edit in ("obligation_removed", "evidence_made_report_shaped"):
+        for model in models:
+            cell = edit_counts.get((str(model), edit))
+            if cell is not None:
+                print(EDIT_LABELS[edit], model, cell["k"], cell["n"], cell["rate"], sep=", ")
     model_groups = [
         [model for model in models if model in {"gpt-5.5", "o3"}],
         [model for model in models if model in {"sonnet", "opus"}],
